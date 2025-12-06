@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Галерея - Пётр I</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #000000; color: #e7e9ea; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .navbar-custom { background-color: #000000; border-bottom: 1px solid #2f3336; }
+        .twitter-blue { color: #1d9bf0; }
+        .twitter-gray { color: #71767b; }
+        .card-twitter { background-color: #000000; border: 1px solid #2f3336; border-radius: 16px; }
+        .list-group-item-twitter { background-color: #000000; color: #e7e9ea; border: 1px solid #2f3336; }
+        .footer-bg { background-color: #000000; border-top: 1px solid #2f3336; color: #71767b; }
+        .nav-link-twitter { color: #e7e9ea; }
+        .nav-link-twitter:hover { color: #1d9bf0; }
+        .carousel-indicators [data-bs-target] { background-color: #71767b; }
+        .carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(1); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+        <div class="container">
+            <a class="navbar-brand twitter-blue fw-bold" href="index.html">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="#1d9bf0">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                Пётр I
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-link-twitter" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-twitter" href="character.html">О Петре I</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-twitter active" href="images.html">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card card-twitter">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-3">Навигация</h5>
+                        <div class="list-group">
+                            <a href="index.html" class="list-group-item list-group-item-twitter list-group-item-action">Главная</a>
+                            <a href="character.html" class="list-group-item list-group-item-twitter list-group-item-action">О Петре I</a>
+                            <a href="images.html" class="list-group-item list-group-item-twitter list-group-item-action active">Галерея</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div id="peterCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded" style="border: 1px solid #2f3336;">
+                        <div class="carousel-item active">
+                            <img src="petr3.PNG" class="d-block w-100" alt="Портрет Петра I">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                                <h5 class="fw-bold">Портрет Петра I</h5>
+                                <p>Официальный портрет императора</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="let.png" class="d-block w-100" alt="Летний сад">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                                <h5 class="fw-bold">Летний сад</h5>
+                                <p>Парк, основанный Петром I</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="k.jpg" class="d-block w-100" alt="Кунсткамера">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                                <h5 class="fw-bold">Кунсткамера</h5>
+                                <p>Первый музей России</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#peterCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#peterCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card card-twitter">
+                            <img src="petr.jpg" class="card-img-top" alt="Петропавловская крепость">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Петропавловская крепость</h5>
+                                <p class="card-text twitter-gray small">Основана в 1703 году</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-twitter">
+                            <img src="medvs.jpg" class="card-img-top" alt="Медный всадник">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Медный всадник</h5>
+                                <p class="card-text twitter-gray small">Памятник Петру I в Санкт-Петербурге</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-twitter">
+                            <img src="flot.jpg" class="card-img-top" alt="Российский флот">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Российский флот</h5>
+                                <p class="card-text twitter-gray small">Создание флота при Петре I</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-bg py-4 mt-4">
+        <div class="container">
+            <p class="mb-0 text-center">Дата создания страницы: 05.12.2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
